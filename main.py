@@ -1,4 +1,4 @@
-from scripts import scraping_script1, scraping_script2, scraping_script3, scraping_script4
+from scripts import scraping1, scraping2, scraping3, scraping4
 from data_processing.data_cleaner import process_data
 from utils import http_requests
 import config
@@ -12,7 +12,7 @@ def main():
     html_content = http_requests.get_html(url)
 
     # Example of executing one of the scraping scripts
-    data = scraping_script1.scrape_function()  # Replace 'scrape_function' with the actual function name in scraping_script1
+    data = scraping1.scrape_function()  # Replace 'scrape_function' with the actual function name in scraping_script1
 
     # Process the scraped data
     cleaned_data = process_data(data)

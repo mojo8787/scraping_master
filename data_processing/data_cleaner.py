@@ -11,8 +11,10 @@ def standardize_data(data_row):
     """
     cleaned_row = {}
     cleaned_row['title'] = clean_title(data_row['title'])
+    
     # Add more fields and cleaning methods as needed
     return cleaned_row
+
 
 def process_data(data_list):
     """
